@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg2">
+
+    <EditText
+        android:id="@+id/showtitle"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/showtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/showtext"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="记事本"
+        android:textColor="#000"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#05FFFDFD"
+            android:onClick="update"
+            android:text="更改" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#05FFFDFD"
+            android:onClick="delete"
+            android:text="删除" />
+
+        <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#05FFFDFD"
+        android:onClick="goBack"
+        android:text="返回" />
+
+    </LinearLayout>
+
+</LinearLayout>
